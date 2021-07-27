@@ -37,9 +37,7 @@ export default {
             var ran = Math.floor(Math.random() * moves.length);
             const move = moves[ran].move;
             const moveName = move.name;
-            //console.log(moveName)
             moveList.push(moveName);
-            //const moveFile = data.entireMoveList
             console.log(this.entireMoveList[moveName]);
             moves.splice(ran, 1);
 

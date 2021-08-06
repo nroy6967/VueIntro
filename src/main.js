@@ -1,16 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
+import vuetify from "./plugins/vuetify.js"
+
 
 Vue.config.productionTip = false
-/*const application = Vue.createApp({
-  data(){
-    return{
-      author: 'Nick',
-      sample: 'this is a sample text'
-    }
-  }
-})
-application.mount('#app')*/
 new Vue({
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <pokemon></pokemon>
+    <pokemon>
+    </pokemon>
   </div>
 </template>
 
 <script>
 import pokemon from './components/Pokemon.vue'
 
+let moveList, pokemonName;
 export default {
   name: 'App',
   components: {
     pokemon
+  },
+  props: {
+    pokemonName,
+    moveList
   }
 }
 </script>
